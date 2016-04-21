@@ -1,3 +1,23 @@
+
+@photo-thumbnail-height: 200px;
+@default-padding: 15px;
+
 #photo-grid{
-  background-color: #d46576;
+  background-color: #d1eeff;
+  border-radius: 25px;
+  padding: @default-padding 0 @default-padding 0;
+}
+
+.photo {
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+    img{
+      height: @photo-thumbnail-height;
+      &:hover{
+        cursor: pointer;
+        border: 10px solid #5ff053;
+      }
+    }
 }

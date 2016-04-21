@@ -32,9 +32,8 @@ class Photowall extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className="container center-text">
         <h1>Photowall</h1>
-        <button type="button" class="btn btn-primary">Primary</button>
         <PhotoGrid photos={this.state.photos}/>
       </div>
     );
