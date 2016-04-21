@@ -24,7 +24,7 @@ class Carousel extends React.Component{
     var carouselPhoto = this.props.photos.map(function(photo, i){
       if(currentImage===i){
         return (
-          <CarouselImage src={photo.src} title={photo.title} photographer={photo.photographer} link={photo.link}/>
+          <CarouselImage key={i} src={photo.src} title={photo.title} photographer={photo.photographer} link={photo.link}/>
         );
       }
     });
@@ -34,13 +34,11 @@ class Carousel extends React.Component{
           <div className="carousel-inner" role="listbox">
             {carouselPhoto}
           </div>
-          <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <a className="left carousel-control" onClick={this.props.onPrevClick} href="#js">
             <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
           </a>
-          <a className="right carousel-control" onClick={this.props.onNextClick} href="#myCarousel" role="button" data-slide="next">
+          <a className="right carousel-control" onClick={this.props.onNextClick} href="#js">
             <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
           </a>
         </div>
       </div>
