@@ -6,7 +6,7 @@ class Backend {
     var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
     var flickrOptions = {
-      tags: "new york",
+      tags: "guitar",
       format: "json"
     };
 

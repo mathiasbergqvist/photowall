@@ -4,10 +4,11 @@ import GridPhoto from './GridPhoto.jsx';
 
 class PhotoGrid extends React.Component{
   render(){
+
     var photos = this.props.photos.map(function(photo){
-      console.log("photo", photo);
+      // console.log(photo);
       return(
-        <GridPhoto link={photo.link}/>
+        <GridPhoto src={photo.src}/>
       );
     });
 
