@@ -32,7 +32,17 @@ class Photowall extends React.Component{
       }
 
       this.setState({photos: photos, currentPhoto: 0});
+
+      this.setPhotoIteration();
+
     }, "New York");
+  }
+
+  setPhotoIteration(){
+    window.setTimeout(() => {
+      this.setNextPhoto();
+      this.setPhotoIteration();
+    }, 5000);
   }
 
   setNextPhoto(){
