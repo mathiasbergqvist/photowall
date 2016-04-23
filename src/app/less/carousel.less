@@ -1,0 +1,23 @@
+#photo-carousel{
+  .carousel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: @carousel-width;
+    border: 5px solid #d5d4d6;
+    &:hover{
+      cursor: pointer;
+      border-color:#5ff053;
+    }
+    .carousel-inner{
+      .item{
+        img{
+          width: @carousel-width;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

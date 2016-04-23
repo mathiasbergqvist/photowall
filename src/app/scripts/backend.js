@@ -2,15 +2,19 @@ import $ from 'jquery';
 
 class Backend {
 
-  getRequest(callbackFunction){
+  getImages(callbackFunction, searchPhrase){
     var flickrAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 
     var flickrOptions = {
-      tags: "guitar",
+      tags: searchPhrase,
       format: "json"
     };
 
-    $.getJSON(flickrAPI, flickrOptions, callbackFunction);
+    $.getJSON(flickrAPI, flickrOptions, callbackFunction)
+      .fail(() => {
+        console.error("An error occured when trying to connect to Flickr api.");
+        throw "Error";
+      });
   }
 }
 

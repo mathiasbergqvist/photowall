@@ -7,7 +7,7 @@ class CarouselImage extends React.Component{
     return(
       <div className="item active center-text">
         <a href={this.props.link} target="_blank">
-          <img src={this.props.src} alt="flickr-photo" />
+          <img src={this.props.src} alt="flickr-photo" className="img-responsive"/>
           <div className="carousel-caption">
             <h4>{this.props.title}</h4>
             <p><span className="glyphicon glyphicon-camera" aria-hidden="true"></span> {this.props.photographer}</p>
