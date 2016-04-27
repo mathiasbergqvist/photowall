@@ -20,4 +20,9 @@ The application will display photos in a carousel view and a grid view. 20 photo
 ## Implementation
 The application is built using the JavaScript framework `React`, developed by `Facebook`. Packages is managed using the package manager `npm`. Styling is managed using the CSS pre-processor `Less` along with the third party library `Bootstrap`.
 
-The application manages all its bundle dependencies and hosting using the module bundeler `webpack`. As the application is built using the ECMAScript standard `es6` and the JavaScript syntax extension `JSX`, the compiler `Babel` is used to transform the source code into JavaScript code that can be interprited by the browser. Module loaders os also set up to compile `less` into `css`.        
+The application manages all its bundle dependencies and hosting using the module bundeler `webpack`. As the application is built using the ECMAScript standard `es6` and the JavaScript syntax extension `JSX`, the compiler `Babel` is used to transform the source code into JavaScript code that can be interprited by the browser. Module loaders os also set up to compile `less` into `css`.
+
+The output of the build will be present in the folder `build`.
+     
+## Author
+Mathias Berggqvist, [mathias.bergqvist@omegapoint.se](mathias.bergqvist@omegapoint.se)
