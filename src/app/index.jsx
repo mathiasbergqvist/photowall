@@ -33,7 +33,7 @@ class Photowall extends React.Component{
 
       this.setState({photos: photos, currentPhoto: 0});
 
-      this.setPhotoIteration();
+      // this.setPhotoIteration();
 
     }, "New York");
   }
@@ -69,9 +69,6 @@ class Photowall extends React.Component{
   }
 
   searchImage(searchPhrase){
-
-    console.log("searchImage", searchPhrase);
-
     this.props.backend.getImages((data) => {
 
       let photos = new Array();

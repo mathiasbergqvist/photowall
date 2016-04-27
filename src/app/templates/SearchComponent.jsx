@@ -9,6 +9,7 @@ class SearchComponent extends React.Component{
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleSubmit(e){
+    e.preventDefault();
     let searchPhrase = this.state.searchPhrase.trim();
     this.props.onSearch(searchPhrase);
   }
